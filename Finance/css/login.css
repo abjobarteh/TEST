@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1D5B79;
+}
+
+.wrapper{
+  position: relative;
+  width: 600px;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper .com{
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.wrapper .com img{
+  height: 100px;
+}
+.wrapper h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.wrapper h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #1D5B79;
+}
+.wrapper form{
+  margin-top: 30px;
+  min-height: 200px;
+}
+.wrapper form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+form .input-box select{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #1D5B79;
+}
+form .policy{
+  display: flex;
+  align-items: center;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #1D5B79;
+  cursor: pointer;
+}
+.invalid .error-message{
+  display: flex;
+}
+
+.invalid input{
+  border-color: #d93025;
+}
+input:valid,input:in-range{
+  border-color: green;
+}
+
+input:invalid,input:out-of-range{
+  border-color: red;
+}
+
+.input-box.button input:hover{
+  background:#1D5B79;
+}
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h3 a{
+  color:#1D5B79;
+  text-decoration: none;
+}
+
+form .text h3 a:hover{
+  text-decoration: underline;
+}
+
+form .error-message{
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  color: #d93025;
+  font-size: 15px;
+  display: none;
+}
+
+form .error-message i{
+  margin-right: 6px;
+  font-size: 15px;
+}
+
+.wrapper form button, .backBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 25px 0;
+  background-color: #1D5B79;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration:none;
+}
+.wrapper form button .btnText{
+  text-decoration:none;
+  color:#fff;
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+.message{
+  width: 100%;
+  position: relative;
+  margin-bottom: 60px;
+  display:flex;
+  justify-content:center;
+}
+.message .success{
+  font-size:12px;
+  color: green;
+  position: absolute;
+  animation:button .3s linear;
+  display:none;
+}
+
+.message .error{
+  font-size:12px;
+  color: red;
+  position: absolute;
+  animation:button .3s linear;
+  display: none;
+}
